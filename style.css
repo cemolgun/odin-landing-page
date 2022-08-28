@@ -1,11 +1,15 @@
 html{
     font-family: 'Roboto', sans-serif;
 }
-.color1{
-    margin-top: -8px;
+.headerDiv{
     margin-left: -8px;
     margin-right: -8px;
     background-color: #a60f07;
+    position: fixed;
+    right: 0%;
+    left: 0%;
+    top:0%;
+    border-top: 10px solid #a60f07;
 }
 header{
     margin-top:-8px;
@@ -29,7 +33,9 @@ header img{
     flex:1;
 }
 .header-link{
-    padding: 5px;
+
+    padding-right: 5px;
+    padding-left: 0px;
     color:white;
     font-weight: bolder;
     font-size: larger;
@@ -38,4 +44,14 @@ header img{
     text-align: right;
     margin-top: auto;
     margin-bottom: auto;
+}
+#spoty{
+    text-align: center;
+}
+.header-link a:any-link{
+    color: white;
+    text-decoration: none;
+}
+.header-link a:hover{
+    text-shadow: 0px 0px 5px black;
 }
