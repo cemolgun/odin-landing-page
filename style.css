@@ -5,32 +5,36 @@ html{
     margin-left: -8px;
     margin-right: -8px;
     background-color: #a60f07;
+    border-top: 10px solid #a60f07;
+    border-bottom: 1px solid black;
     position: fixed;
     right: 0%;
     left: 0%;
     top:0%;
-    border-top: 10px solid #a60f07;
 }
 header{
     margin-top:-8px;
-    margin-left:12.5%;
-    margin-right:12.5%;
+    margin-left:12.5vw;
+    margin-right:12.5vw;
     background-color: #a60f07;
     display: flex;
+    height: 10vh;
+    min-height: 65px;
 }
 header img{
     margin-right: auto;
+    margin-bottom: 1vh;
     display: inline;
     padding:5px;
     padding-left: 0;
-    width: 25%;
-    min-width: 65px;
+    height: 8vh;
+    min-height: 55px;
 }
 #headerLogo{
     flex:2 1 1;
 }
 #header-empty{
-    flex:1;
+    flex:2;
 }
 .header-link{
 
@@ -41,12 +45,9 @@ header img{
     font-size: larger;
     vertical-align: middle;
     flex:0.5;
-    text-align: right;
+    text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-}
-#spoty{
-    text-align: center;
 }
 .header-link a:any-link{
     color: white;
@@ -54,4 +55,74 @@ header img{
 }
 .header-link a:hover{
     text-shadow: 0px 0px 5px black;
+}
+.sectionDiv{
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 10vh;
+    background-color: #a60f07;
+}
+section{
+    display: flex;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+
+}
+section h1, h3, button{
+    margin-left:-8px;
+}
+#section-1 img{
+    width: 35vw;
+    border: solid 4px #dddddd;
+}
+#s11{
+    color: white;
+    flex:1;
+    text-align: left;
+}
+#s11 h1{
+    font-size: xxx-large;
+    margin-bottom: 0%;
+}
+#s11 h3{
+
+    color:#dddddd;
+    margin-top: 0.5%;
+    font-size: x-large;
+    font-weight: lighter;
+    font-style: italic;
+}
+#s12{
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: right;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+#section-1 div{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+button{
+    padding: 4px;
+    color:white;
+    font-size: medium;
+    font-family:inherit;
+    font-style: italic;
+    border: 2px solid #dddddd;
+    border-radius: 6px;
+    background-color: #4a4a4a;
+}
+button:hover{
+    border-color: #4a4a4a;
+    background-color: white;
+    color: #4a4a4a;
+}
+button:active{
+    background-color:#a60f07;
+    color:white;
+    border-color: white;
 }
